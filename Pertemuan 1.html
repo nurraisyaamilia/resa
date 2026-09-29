@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CV Nur Raisya Amilia</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f2f2f2;
+            color: #333;
+        }
+
+        .cv {
+            width: 210mm;
+            min-height: 297mm;
+            margin: 20px auto;
+            background: white;
+        }
+
+
+        .header {
+            height: 60mm;
+            background: #193b88;
+            color: white;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            padding: 0 60px;
+        }
+
+        .header-info h1 {
+            font-size: 31px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            margin-bottom: 18px;
+        }
+
+        .header-info p {
+            font-size: 14px;
+            font-weight: bold;
+            letter-spacing: 8px;
+        }
+
+        .photo {
+            width: 120px;
+            height: 120px;
+
+            border-radius: 50%;
+            object-fit: cover;
+
+            border: 2px solid white;
+        }
+
+
+        .content {
+            padding: 36px 60px;
+        }
+
+        .section {
+            margin-bottom: 35px;
+        }
+
+        .section-title {
+            color: #193b88;
+            font-size: 17px;
+            font-weight: bold;
+
+            display: inline-block;
+            position: relative;
+
+            padding-bottom: 8px;
+            margin-bottom: 15px;
+        }
+
+        .section-title::after {
+            content: "";
+
+            position: absolute;
+            left: 0;
+            bottom: 0;
+
+            width: 168px;
+            height: 4px;
+
+            background: #193b88;
+        }
+
+
+        .personal-data {
+            display: grid;
+            grid-template-columns: 165px 20px 1fr;
+            row-gap: 11px;
+
+            font-size: 14px;
+        }
+
+        .personal-data .label {
+            font-weight: 400;
+        }
+
+        .personal-data .separator {
+            text-align: center;
+        }
+
+
+        ul {
+            padding-left: 25px;
+        }
+
+        li {
+            font-size: 14px;
+            margin-bottom: 10px;
+            line-height: 1.4;
+        }
+
+
+        .education-list {
+            margin-top: 3px;
+        }
+
+
+        .experience-subtitle {
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .experience-list {
+            padding-left: 20px;
+        }
+
+
+        @media print {
+            body {
+                background: white;
+            }
+
+            .cv {
+                margin: 0;
+                width: 210mm;
+                min-height: 297mm;
+            }
+
+            @page {
+                size: A4;
+                margin: 0;
+            }
+        }
+
+
+        @media screen and (max-width: 800px) {
+            body {
+                background: white;
+            }
+
+            .cv {
+                width: 100%;
+                margin: 0;
+            }
+
+            .header {
+                padding: 30px;
+            }
+
+            .content {
+                padding: 30px;
+            }
+
+            .header-info h1 {
+                font-size: 25px;
+            }
+
+            .photo {
+                width: 90px;
+                height: 90px;
+            }
+
+            .personal-data {
+                grid-template-columns: 100px 20px 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="cv">
+
+        <header class="header">
+
+            <div class="header-info">
+                <h1>NUR RAISYA AMILIA</h1>
+                <p>LULUSAN SMK</p>
+            </div>
+
+            <img
+                src="foto gueh.jpeg"
+                alt="Foto Nur Raisya Amilia"
+                class="photo"
+            >
+
+        </header>
+
+
+        <main class="content">
+
+            <section class="section">
+
+                <h2 class="section-title">
+                    DATA PRIBADI
+                </h2>
+
+                <div class="personal-data">
+
+                    <span class="label">Nama</span>
+                    <span class="separator">:</span>
+                    <span>Nur Raisya amilia</span>
+
+                    <span class="label">Alamat</span>
+                    <span class="separator">:</span>
+                    <span>
+                        JL.Rawasari XVI No.79C Teluk Dalam,
+                        Banjarmasin Tengah
+                    </span>
+
+                    <span class="label">Email</span>
+                    <span class="separator">:</span>
+                    <span>nurraisyaamilia11@gmail.com</span>
+
+                    <span class="label">Telepon</span>
+                    <span class="separator">:</span>
+                    <span>0838-3606-5400</span>
+
+                </div>
+
+            </section>
+
+
+            <section class="section">
+
+                <h2 class="section-title">
+                    PENDIDIKAN
+                </h2>
+
+                <ul class="education-list">
+                    <li>
+                        SMK Negeri 1 Banjarmasin,
+                        Jurusan Pemasaran
+                    </li>
+                </ul>
+
+            </section>
+
+
+            <section class="section">
+
+                <h2 class="section-title">
+                    KEAHLIAN
+                </h2>
+
+                <ul>
+
+                    <li>
+                        Penguasaan analisis pasar
+                    </li>
+
+                    <li>
+                        Strategi digital marketing
+                    </li>
+
+                    <li>
+                        Komunikasi bisnis dan kerja sama tim
+                    </li>
+
+                    <li>
+                        Perancangan strategi
+                    </li>
+
+                </ul>
+
+            </section>
+
+
+            <section class="section">
+
+                <h2 class="section-title">
+                    PENGALAMAN KERJA
+                </h2>
+
+                <p class="experience-subtitle">
+                    PRAKTIK KERJA LAPANGAN
+                </p>
+
+                <ul class="experience-list">
+
+                    <li>
+                        DIANA ROSE
+                        (1 Maret 2024 - 31 Maret 2024)
+                    </li>
+
+                    <li>
+                        KINDAH SHOP SMKN 1 BJM
+                        (1 Jan 2025 - 31 Maret 2025)
+                    </li>
+
+                    <li>
+                        LUMIERE FLORIST & BELI BUAH BANJARMASIN
+                        (1 Juli 2025 - 31 Okt 2025)
+                    </li>
+
+                </ul>
+
+            </section>
+
+        </main>
+
+    </div>
+
+</body>
+</html>
